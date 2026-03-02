@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Joe's Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white/60 backdrop-blur sticky top-0 z-30">
+      <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 via-orange-400 to-amber-600 flex items-center justify-center text-white font-bold">J</div>
+          <span class="font-medium text-lg">Joe's Coffee</span>
+        </a>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#menu" class="hover:text-amber-600">Menu</a>
+          <a href="#about" class="hover:text-amber-600">About</a>
+          <a href="#contact" class="hover:text-amber-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-6">
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Wake up with Joe's Coffee</h1>
+            <p class="text-gray-600">Small-batch roasted beans, handcrafted drinks, and warm pastries. Welcome to your neighborhood coffee shop.</p>
+            <div class="flex gap-4">
+              <a href="#menu" class="inline-block bg-amber-600 text-white px-5 py-3 rounded-lg font-medium shadow hover:bg-amber-700">View Menu</a>
+              <a href="#contact" class="inline-block border border-amber-600 text-amber-600 px-5 py-3 rounded-lg font-medium hover:bg-amber-50">Visit Us</a>
+            </div>
+            <div class="mt-4 text-sm text-gray-500">Open daily 7am — 6pm • Free Wi‑Fi • Walk-ins welcome</div>
+          </div>
+          <div class="order-first md:order-last">
+            <div class="w-full h-64 bg-gradient-to-br from-amber-100 via-amber-50 to-white rounded-3xl shadow-lg flex items-center justify-center">
+              <svg width="220" height="220" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-90">
+                <path d="M3 7h18" stroke="#B45309" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M7 7c0 3.866 3.582 7 8 7s8-3.134 8-7" stroke="#92400E" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6 18c1.333-2 3.2-3 6-3s4.667 1 6 3" stroke="#7C2D12" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="12" cy="10" r="3" stroke="#92400E" stroke-width="1.2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+          <svg width="320" height="320" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0%" stop-color="#F59E0B" />
+                <stop offset="100%" stop-color="#F97316" />
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="80" fill="url(#g)" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="menu" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-semibold">Menu</h2>
+          <p class="text-gray-600 mt-2">Simple favorites, expertly made.</p>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6">
+          <article class="bg-white rounded-xl p-6 shadow-sm border">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="text-lg font-medium">Espresso</h3>
+                <p class="text-gray-500 text-sm mt-1">Rich and concentrated shot from our house blend.</p>
+              </div>
+              <div class="text-amber-600 font-semibold">$2.50</div>
+            </div>
+            <div class="mt-4 text-sm text-gray-400">Single origin beans roasted weekly.</div>
+          </article>
+
+          <article class="bg-white rounded-xl p-6 shadow-sm border">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="text-lg font-medium">Cappuccino</h3>
+                <p class="text-gray-500 text-sm mt-1">Velvety steamed milk with a bold espresso base.</p>
+              </div>
+              <div class="text-amber-600 font-semibold">$4.00</div>
+            </div>
+            <div class="mt-4 text-sm text-gray-400">Made to order, dairy and non-dairy options available.</div>
+          </article>
+
+          <article class="bg-white rounded-xl p-6 shadow-sm border">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="text-lg font-medium">Almond Croissant</h3>
+                <p class="text-gray-500 text-sm mt-1">Buttery, flaky pastry with a toasted almond filling.</p>
+              </div>
+              <div class="text-amber-600 font-semibold">$3.75</div>
+            </div>
+            <div class="mt-4 text-sm text-gray-400">Baked fresh daily by local bakery partners.</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="bg-amber-50 py-12">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <h3 class="text-xl font-semibold">Our Story</h3>
+          <p class="mt-3 text-gray-600 max-w-2xl mx-auto">Joe's Coffee began as a neighborhood counter with a belief that great coffee brings people together. We source beans responsibly and roast with care to highlight each origin's character.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="max-w-5xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h4 class="text-lg font-semibold">Visit Us</h4>
+            <p class="text-gray-600 mt-2">123 Bean Street<br/>Springfield, ST 12345</p>
+            <p class="mt-4 text-sm">Phone: (555) 123-4567<br/>Email: hello@joescoffee.example</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold">Hours</h4>
+            <ul class="text-gray-600 mt-2">
+              <li>Monday — Friday: 7am — 6pm</li>
+              <li>Saturday: 8am — 5pm</li>
+              <li>Sunday: 8am — 4pm</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t bg-white">
+      <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+        <div class="text-sm text-gray-600">© "Joe's Coffee" — 2026. All rights reserved.</div>
+        <div class="mt-3 md:mt-0 text-sm text-gray-600">Follow us: <a href="#" class="text-amber-600 hover:underline">Instagram</a> · <a href="#" class="text-amber-600 hover:underline">Facebook</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
